@@ -38,10 +38,15 @@
 #print(id)
 
 
-##############################for문
-#guests=['a','b','c','d']
-#for steps in range(4) :
-#    print(guests[steps])#파이썬에선 들여쓰기가 굉장히 중요(스페이스나 텝으로)
+#############################for문
+guests=['a','b','c',['d','e']]
+for steps in guests :
+    if isinstance(steps, list) : 
+        for step in steps :
+            print(step)
+    else :
+        print(steps)
+        #파이썬에선 들여쓰기가 굉장히 중요(스페이스나 텝으로)
 
 #nEntries = len(guests)
 #for steps in range(nEntries) :
@@ -52,16 +57,33 @@
 
 #for abc in guests :
 #    print(abc)
+
+
 ###################sort
-score=[90,40,30,80,100,12,33]
-print(score)
-score.sort()
-print(score)
-score.reverse()
-print(score)
-top3 = score[0:3]
-print(top3)
+#score=[90,40,30,80,100,12,33]
+#print(score)
+#score.sort()
+#print(score)
+#score.reverse()
+#print(score)
+#top3 = score[0:3]
+#print(top3)
 
+score=[10,30,40,30,20]
+score.extend([50,60])#
+score.append([50,60])
+print(score)
 
-
+#################tuple ///////튜플()은 리스트[]와 같다(거의)
+#튜플은 갱신 불가
+t1 = ()
+t2 = (1,) 
+t3 = (1,2,3)
+t4 = 1,2,3
+t5 = ('a','b','c')
+print(t2)
+print(t3)
+print(t4)
+print(t5)
+print(t2) 
 
