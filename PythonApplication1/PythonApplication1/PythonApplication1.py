@@ -35,15 +35,16 @@
 #    print("no charge")
 
 #for 문
-a = [(1,2),(3,4),(5,6)]
-for(first, last) in a :
-    print(first + last)
+#a = [(1,2),(3,4),(5,6)]
+#for(first, last) in a :
+#    print(first + last)
 
 #구구단
 for i in range(2,10) :
     for j in range(1,10) :
-        print("%d * %d = %d" %(i,j,i*j), end="")
-    print(" ")
+        print("%d * %d = %d \n" %(i,j,i*j), end="")
+    print("")
+
 
 #turtle 그리기 라이브러리
 #nSides = 12
@@ -56,15 +57,15 @@ for i in range(2,10) :
 
 #While문 메뉴 만들기 예제
 
-prompt = """
-1. Add
-2. Del
-3. List
-4. Quit
+#prompt = """
+#1. Add
+#2. Del
+#3. List
+#4. Quit
 
-Enter number: """
+#Enter number: """
 
-number = 0
-while number != 4 :
-    print(prompt, end="")
-    number = int(input())
+#number = 0
+#while number != 4 :
+#    print(prompt, end="")
+#    number = int(input())
