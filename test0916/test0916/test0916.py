@@ -1,11 +1,11 @@
-﻿import pickle#########저장 dump()###########읽어오기 load()
+﻿#import pickle#########저장 dump()###########읽어오기 load()
 
-fileName = "friends2.txt"
-fileName2 = "Monica.txt"
+#fileName = "friends2.txt"
+#fileName2 = "Monica.txt"
 
-roles = []
+#roles = []
 
-with open(fileName, "r") as myFile, open(fileName2, "wb+") as monica :## pickle바이너리형태라 wb
+#with open(fileName, "r") as myFile, open(fileName2, "wb+") as monica :## pickle바이너리형태라 wb
     #myFile.write("201011248 김종빈\n")
     #myFile.write("201011247 기민주\n")
     #myFile.write("201011246 이철헌\n")
@@ -37,11 +37,11 @@ with open(fileName, "r") as myFile, open(fileName2, "wb+") as monica :## pickle�
     #    (role,etc) = content.strip().split(":",1)
     #    roles.append(role)
     #print(roles)
-     for content in myFile :
-        (role,etc) = content.strip().split(":",1)
-        roles.append(role)
-    pickle.dump(roles, monica)
+#     for content in myFile :
+#        (role,etc) = content.strip().split(":",1)
+#        roles.append(role)
+#    pickle.dump(roles, monica)
     
-with open(fileName, "r") as myFile, open(fileName2, "rb") as monica :## pickle바이너리형태라 wb
-    result = pickle.load(monica)
-    print(result)
+#with open(fileName, "r") as myFile, open(fileName2, "rb") as monica :## pickle바이너리형태라 wb
+#    result = pickle.load(monica)
+#    print(result)
